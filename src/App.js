@@ -32,8 +32,6 @@ class App extends React.Component {
 
         <form className="App" onSubmit={this.onSubmit}>
           <input value={this.state.todo} onChange={this.onChange} />
- 
-          {/* <input type="text" placeholder="todo list" onChange={this.handleInputchange} /> */}
           <button>Add todo list</button>
           <button>clear</button>
         </form>
