@@ -8,20 +8,30 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      list: ''
+      todo: '',
+      list: []
     
-    }
+    };
   }  
   handleInputchange = event => {
     console.log(event.target.value);
-    this.setState({todoList: event.target.value});
-  };
+    this.setState({todo: event.target.value});
+  }
+
+  onSubmit = (event) => {
+    event.preventDefault();
+    this.setState({
+      term: '',
+      list: [...this.state.list, this.state.todo]
+    });
+  }
   
   render() {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
-        <input type="text" placeholder="todo list" onChange={this.handleInputchange} />
+        <input value={this.state.todo} onChange={this.handleInputchange} />
+        {/* <input type="text" placeholder="todo list" onChange={this.handleInputchange} /> */}
         <button>Add todo list</button>
         <button>clear</button>
       </div>
