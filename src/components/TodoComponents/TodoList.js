@@ -3,5 +3,12 @@
 
 import React from 'react';
 
-const TodoList = props => <h4>{props.propslist}</h4>
+const TodoList = props => (
+    <ul>
+        {
+            props.tasks.map((task, index) => <li key={index}>{task}</li>)
+        }
+    </ul>
+);
 
+export default TodoList;
