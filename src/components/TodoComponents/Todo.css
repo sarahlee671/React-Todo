@@ -1,10 +1,84 @@
 .App {
-    width: 600px;
+    width: 500px;
+    height: auto;
+    display: inline-block;
     border: 1px solid black;
+    justify-content: center;
+    background-color: beige;
+    padding: 50px;
+    font-family: 'Lucida Grande', Verdana, sans-serif;
+
+
 }
 
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: lightslategray;
+    text-shadow: 2px 2px 4px slategray;
+    
+}
 
+.form {
+    display: flex;
+    justify-content: center;
+    color: slategray;
+    align-items: center;
+    
+
+
+}
+
+.input {
+    align-content: center;
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    border: 2px solid slategray;
+    box-shadow: 5px 10px 8px slategray;
+
+}
+.add-button {
+    width: 100px;
+    height: 25px;
+    margin-left: 10px;
+    background-color: lightgray;
+    font-size: 15px;
+    color: slategray;
+    border: 1px solid slategray;
+    border-radius: 5px;
+ 
+
+}
+
+.todo-list {
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
 
 .item.completed {
     text-decoration: line-through;
+}
+
+.clear-button-container {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 20px;
+}
+
+.clear-button {
+    width: 200px;
+    height: 30px;
+    color: slategray;
+    background-color: lightgray;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid slategray;
+
+
+
 }
