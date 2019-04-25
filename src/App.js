@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import Todo from './components/TodoComponents/Todo.css';
 
 
 const tasks = [
@@ -60,14 +61,7 @@ class App extends React.Component {
     });
     this.setState({tasks: todoCompleted})
   };
-  
-  
-    //use filter
-    //looping over all the items inside of 'this.state.tasks'
-      //filter out any items, who's item.purchased === true
-    //set your state with your new filtered list.
-  
- 
+   
   render() {
     return (
       <div className="App">

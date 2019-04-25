@@ -1,3 +1,10 @@
+.App {
+    width: 600px;
+    border: 1px solid black;
+}
+
+
+
 .item.completed {
     text-decoration: line-through;
 }
