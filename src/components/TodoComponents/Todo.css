@@ -48,7 +48,11 @@
     color: slategray;
     border: 1px solid slategray;
     border-radius: 5px;
- 
+}
+
+.add-button:hover {
+    cursor: pointer;
+    background-color: white;
 
 }
 
@@ -62,6 +66,7 @@
 
 .item.completed {
     text-decoration: line-through;
+    color: slategray;
 }
 
 .clear-button-container {
@@ -71,14 +76,16 @@
 }
 
 .clear-button {
-    width: 200px;
+    width: 150px;
     height: 30px;
     color: slategray;
     background-color: lightgray;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 5px;
     border: 1px solid slategray;
+}
 
-
-
+.clear-button:hover {
+    cursor: pointer;
+    background-color: white;
 }
