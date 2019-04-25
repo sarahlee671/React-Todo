@@ -2,9 +2,9 @@ import React from "react";
 
 const TodoForm = props => (
 
-        <form onSubmit={props.onSubmit}>
+        <form>
           <input placeholder="Add todo" value={props.todo} onChange={props.onChange} />
-          <button>Add todo list</button>
+          <button onClick={props.onClick}>Add todo</button>
           <button>Clear Completed</button>
         </form>
 
