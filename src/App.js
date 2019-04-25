@@ -52,29 +52,29 @@ class App extends React.Component {
 
     this.setState({tasks: copiedTasks});
   };
- 
- // onChange = event => {
-  //   event.preventDefault();
 
-  //   this.setState({todo: event.target.value});
-  // }
+  clearCompleted = () => {
+    const todoCompleted = this.state.tasks.filter(item => {
+      return item.completed === false 
 
-  // onClick = (event) => {
-  //   event.preventDefault();
-   
-  //   this.setState({
-      
-  //     tasks: [...this.state.tasks, this.state.todo],
-  //     todo: ""
+    });
+    this.setState({tasks: todoCompleted})
+  };
   
-  //   });
-  // };
+  
+    //use filter
+    //looping over all the items inside of 'this.state.tasks'
+      //filter out any items, who's item.purchased === true
+    //set your state with your new filtered list.
+  
+ 
   render() {
     return (
       <div className="App">
         <h1>My Todo List</h1>
         <TodoForm addTodo={this.addTodo} />
         <TodoList tasks={this.state.tasks} toggleItem={this.toggleItem}/>
+        <button onClick={this.clearCompleted}>Clear Completed</button>
       </div>
     );
   }
